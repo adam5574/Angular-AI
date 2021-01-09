@@ -1,0 +1,168 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 540px;
+    word-wrap: normal;
+}
+
+.inner {
+    margin-top: 13.2em;
+    text-align: center;
+    color: whitesmoke;
+    overflow: hidden;
+    padding: 0.4em;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif, serif;
+    text-decoration: none;
+}
+
+.inner>h1 {
+    font-size: 3.9em;
+    font-weight: bold;
+    animation: Slide_Up 1.4s ease;
+}
+
+.inner>p {
+    font-size: 2.6em;
+    font-weight: bold;
+    padding-top: 0.2em !important;
+    animation: Slide_Up 1.4s ease;
+}
+
+.inner>button {
+    margin-top: 2em;
+    padding: 1em 2.5em;
+    font-size: 1em;
+    animation: Slide_Up 1.4s ease;
+}
+
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(250px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#parallax-image {
+    background: url(src\assets\ai1.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+}
+
+.card-content {
+    justify-content: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.card {
+    max-width: 30vh;
+    max-height: 70vh;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.card mat-card-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card mat-card-content h2 {
+    text-align: center !important;
+    font-size: 18px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif, serif;
+    color: rgb(175, 52, 43);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card mat-card-content {
+    font-size: 13px;
+}
+
+.section-subtitle p {
+    text-align: center;
+    color: rgb(61, 51, 51);
+    overflow: hidden;
+    padding: 0.4em;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif, serif;
+    text-decoration: none;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-weight: bold;
+    padding-top: 14vh;
+    margin-bottom: 14vh;
+}
+
+img {
+    max-width: 80%;
+    max-height: fit-content;
+}
+
+.mat-card img {
+    height: 150px;
+}
+
+.second-tile {
+    width: 80%;
+    height: 100%;
+    margin-left: 5vh;
+    margin-top: 15vh;
+}
+.second-tile h1 {
+font-size: 35px;
+}
+
+.second-tile p {
+    font-size: 20px;
+}
+
+@media screen and (max-width:700px) {
+    .section-subtitle {
+        padding-bottom: 10vh;
+    }
+    .inner {
+        line-height: normal;
+    }
+    .inner>h1 {
+        font-size: 3.2em;
+        line-height: normal;
+    }
+    .inner>p {
+        font-size: 1.8em;
+    }
+    .inner>h5 {
+        margin-top: 3em;
+    }
+    .section-subtitle p {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .inner>h1 {
+        font-size: 2.8em;
+        line-height: normal;
+    }
+    .inner>p {
+        font-size: 1.4em;
+    }
+}

@@ -1,0 +1,79 @@
+<body>
+    <div class="wrapper" id="parallax-image">
+        <div class="inner">
+            <h1>Artificial intelligence</h1>
+            <p> Is this already the future? </p>
+        </div>
+    </div>
+
+
+    <section class="section-subtitle">
+        <p>What is this page about?</p>
+    </section>
+
+    <mat-grid-list [cols]="breakpoint" rowHeight="450px" (window:resize)="onResize($event)">
+        <mat-grid-tile data-aos="fade-left" data-aos-duration="2000">
+            <img src="assets/ai4.png">
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+            <mat-card-content class="second-tile">
+                <h1> In a nutshell</h1>
+                <p>Artificial Intelligence (AI) is a rapidly advancing technology, made possible by the Internet, that
+                    may soon have significant impacts on our everyday lives. AI traditionally refers to an artificial
+                    creation of human-like intelligence that can learn, reason, plan, perceive, or process natural
+                    language. These traits allow AI to bring immense socioeconomic opportunities, while also posing
+                    ethical and socio-economic challenges.</p>
+                        <br><br>
+                    <h1>Click on the tab below to learn more about AI!</h1>
+
+            </mat-card-content>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+
+
+
+    <div class="card-content" #target fxLayout="row wrap" fxLayoutGap="16px">
+
+        <mat-card class="card" data-aos="fade-down" data-aos-duration="1000">
+            <a routerLink="/what-is-ai">
+                <mat-card-header>
+                    <img src="assets\ai2.jpg" />
+                </mat-card-header>
+                <mat-card-content>
+                    <h2>What Artificial intelligence is?</h2>
+                    <p>Read more ! </p>
+
+                </mat-card-content>
+            </a>
+        </mat-card>
+
+        <mat-card class="card" data-aos="fade-down" data-aos-duration="2000">
+            <a routerLink="/use-of-ai">
+                <mat-card-header>
+                    <img src="assets\ai5.jpg" />
+                </mat-card-header>
+                <mat-card-content>
+                    <h2>Use of Artificial intelligence </h2>
+                    <p>Read more !</p>
+                </mat-card-content>
+            </a>
+        </mat-card>
+
+
+        <mat-card class="card" data-aos="fade-down" data-aos-duration="3000">
+            <a routerLink="/#">
+                <mat-card-header>
+                    <img src="assets\ai6.jpg" />
+                </mat-card-header>
+                <mat-card-content>
+                    <h2>Is AI dangerous?</h2>
+                    <p>Read more !</p>
+                </mat-card-content>
+            </a>
+        </mat-card>
+
+    </div>
+
+</body>
