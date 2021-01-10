@@ -16,6 +16,7 @@ import { UseOfAiComponent } from './Components/use-of-ai/use-of-ai.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DangerOfAiComponent } from './Components/danger-of-ai/danger-of-ai.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HomeComponent,
     WhatIsAiComponent,
-    UseOfAiComponent
+    UseOfAiComponent,
+    DangerOfAiComponent
   ],
   imports: [
     BrowserModule,
